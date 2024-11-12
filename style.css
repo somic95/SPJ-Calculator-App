@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg,hsl(351, 100%, 86%,0.2),hsl(351, 100%, 86%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calulator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calulator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal {
+    width: 145px;
+}
+form input.operator {
+    color: #ffb6c1;
+    font-weight: 600;
+
+}
+form input.operator:hover {
+    color: #fff;
+}
+.calulator form input:hover {
+    transform: translateY(2px);
+}
+.calulator form input:active {
+    color: #3a4452;
+}
